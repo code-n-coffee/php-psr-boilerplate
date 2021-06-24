@@ -6,7 +6,7 @@ use Laminas\Diactoros\Response;
 
 class AdminController
 {
-    public function indexAction()
+    public function indexAction() : Response
     {
         $response = new Response();
 
