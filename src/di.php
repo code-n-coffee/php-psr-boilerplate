@@ -4,13 +4,12 @@ declare(strict_types=1);
 
 namespace App;
 
-use App\Controller\IndexController;
-use App\Service\HelloWorldService;
 use League\Container\Container;
+use League\Container\ReflectionContainer;
 
 $container = new Container();
 
-$container->add(IndexController::class)->addArgument(HelloWorldService::class);
-$container->add(HelloWorldService::class);
+// add auto wire
+$container->delegate(new ReflectionContainer());
 
 return $container;
