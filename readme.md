@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/code-n-coffee/php-psr-boilerplate.svg?branch=master)](https://travis-ci.com/code-n-coffee/php-psr-boilerplate)
+
 ## Really Simple PSR's Compliant PHP Boilerplate
 
 This is a PSR's compliant php boilerplate based on `thephpleague` libs and have all you will need to quick start your application without a framework.
