@@ -18,17 +18,18 @@ class IndexController
         $this->service = $service;
     }
 
-    public function indexAction() : Response
+    public function indexAction(ServerRequestInterface $request) : Response
     {
         $response = new Response();
 
+        if(isset($request->getQueryParams()['denied'])) {
+            $response->getBody()
+                     ->write('<p>The auth middleware denied you! You have been redirected back. Try with authentication: <a href="/admin?authenticated">\'/admin?authenticated\'</a></p>');
+        }
+
         $response->getBody()->write('<h1>' . $this->service->returnHelloWorld() . '</h1>');
+        $response->getBody()->write('<br><a href="/admin">\'/admin\'</a>');
 
         return $response;
-    }
-
-    public function catchAllAction(ServerRequestInterface $request) : Response
-    {
-        dd($request);
     }
 }
