@@ -2,7 +2,8 @@
 
 ## Really Simple PSR's Compliant PHP Boilerplate
 
-This is a PSR's compliant php boilerplate based on `thephpleague` libs and have all you will need to quick start your application without a framework.
+This is a PSR's compliant php boilerplate based on `thephpleague` libs and have all you will need to quick start your
+application without a framework.
 
 ### Features:
 
@@ -15,11 +16,12 @@ This is a PSR's compliant php boilerplate based on `thephpleague` libs and have 
 - phpstan static analysis;
 - travis ci;
 
-you can find useful documentation at: 
+you can find useful documentation at:
+
 - https://route.thephpleague.com/
 - https://container.thephpleague.com/
 
-###Usage
+### Usage
 
 start server: `docker-compose up`;
 
@@ -29,6 +31,10 @@ run tests: `docker-compose exec php vendor/bin/phpunit`;
 
 run static analysis: `docker-compose exec php vendor/bin/phpstan`;
 
-###Travis CI
+run phpcs analysis: `docker-compose exec php vendor/bin/phpcs`; 
+
+run phpcs fixes: `docker-compose exec php vendor/bin/phpcbf`;
+
+### Travis CI
 
 Todo
