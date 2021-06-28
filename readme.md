@@ -14,7 +14,7 @@ application without a framework.
 - Middlewares (PSR 15);
 - phpunit tests;
 - phpstan static analysis;
-- travis ci;
+- travis ci ready;
 
 you can find useful documentation at:
 
@@ -34,7 +34,3 @@ run static analysis: `docker-compose exec php vendor/bin/phpstan`;
 run phpcs analysis: `docker-compose exec php vendor/bin/phpcs`; 
 
 run phpcs fixes: `docker-compose exec php vendor/bin/phpcbf`;
-
-### Travis CI
-
-Todo
